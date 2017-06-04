@@ -1,12 +1,14 @@
 .item {
     position: relative;
-    background: #ccc;
+    background: #07c;
+    color: #fff;
     width: 24%;
     min-height: 180px;
     float: left;
-    margin-right: 1%;
+    margin-right: 0.5%;
+    margin-left: 0.5%;
     margin-bottom: 10px;
-    transition: .75s background;
+    transition: 1s background;
 }
 
 .item .header,
@@ -29,6 +31,7 @@
     border-top: 1px solid #bababa;
     position: absolute;
     bottom: 0;
+    padding: 10px 5px;
 }
 
 .item:hover {
