@@ -29,5 +29,4 @@ const quiz = <Quiz
     description="Advanced questions from javascript" />
 
 ReactDOM.render(quiz, app);
-
 registerServiceWorker();

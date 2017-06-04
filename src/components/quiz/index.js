@@ -28,7 +28,6 @@ class Quiz extends React.Component {
     }
     render() {
         const quiz = this.props;
-        console.log(quiz);
         return (
             <div>
                 <div className="item">
