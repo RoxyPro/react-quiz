@@ -2,24 +2,15 @@
     position: relative;
     background: #07c;
     color: #fff;
-    width: 24%;
-    min-height: 180px;
-    float: left;
     margin-right: 0.5%;
     margin-left: 0.5%;
     margin-bottom: 10px;
-    transition: 1s background;
 }
 
 .item .header,
 .item .footer {
-    width: 100%;
     text-align: center;
     padding: 10px 0;
-}
-
-.item .header {
-    border-bottom: 1px solid #bababa;
 }
 
 .item .body {
@@ -29,12 +20,33 @@
 
 .item .footer {
     border-top: 1px solid #bababa;
-    position: absolute;
-    bottom: 0;
-    padding: 10px 5px;
+    overflow: auto;
 }
 
-.item:hover {
-    background: #eee;
+.quiz-actions {
+    overflow: auto;
+}
+
+.prev-question button,
+.next-question button {
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 10px;
+    color: #fff;
     cursor: pointer;
+    transition: 0.5s background;
+}
+
+.prev-question:hover button,
+.next-question:hover button {
+    background: #fff;
+    color: #07c;
+}
+
+.prev-question {
+    float: left;
+}
+
+.next-question {
+    float: right;
 }

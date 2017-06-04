@@ -6,6 +6,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background: #ccc;
 }
 
  .pull-left {
@@ -14,4 +15,8 @@ body {
 
  .pull-right {
    float: right;
+ }
+
+ #app {
+   overflow: hidden;
  }

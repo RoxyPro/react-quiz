@@ -1,33 +1,33 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Home from './components/home';
+// import Home from './components/home';
 import Quiz from './components/quiz';
 import Question from './components/question';
+import Answer from './components/answer';
 import registerServiceWorker from './registerServiceWorker';
 import './index.css';
 
 // Root component
 const app = document.getElementById('app');
 
-const questions = [
-  <Question id="a" key="a" content="What is callback?" />,
-  <Question id="b" key="b" content="What is closure?" />
+const answers = [
+  <Answer id="a" key="a" content="Answer 1" />,
+  <Answer id="b" key="b" content="Answer 2" />,
+  <Answer id="c" key="c" content="Answer 3" />
 ];
 
-const quizes = [
-  <Quiz
+const questions = [
+  <Question id="1" key="1" content="What is callback?" answers={answers} />,
+  <Question id="2" key="2" content="What is closure?" answers={answers} />
+];
+
+const quiz = <Quiz
     title="Advanced JS"
     questions={questions}
     numOfQuestions={questions.length}
-    key="1"
-    id="1"
     category="Javascript"
-    description="Advanced questions from javascript" />,
-  <Quiz title="React" key="2" id="2" category="Javascript, ReactJS" description="Questions from ReactJS framework" />,
-  <Quiz title="Advanced JS" key="3" id="3" category="Javascript" description="Advanced questions from javascript" />,
-  <Quiz title="React" key="4" id="4" category="Javascript, ReactJS" description="Questions from ReactJS framework" />,
-  <Quiz title="Angular" key="5" id="5" category="Javascript, AngularJS, Angular 1.x" description="Questions from AngularJS framework" />
-];
+    description="Advanced questions from javascript" />
 
-ReactDOM.render(<Home className="home" list={quizes} />, app);
+ReactDOM.render(quiz, app);
+
 registerServiceWorker();

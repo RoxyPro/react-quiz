@@ -1,15 +1,15 @@
 import React from 'react';
 import './index.css';
 
-class Question extends React.Component {
+class Answer extends React.Component {
     render() {
-        let question = this.props;
+        let answer = this.props;
         return (
             <div className="question">
-                {question.content}
+                {answer.content}
             </div>
         );
     }
 }
 
-export default Question;
+export default Answer;
