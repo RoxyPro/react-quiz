@@ -1,0 +1,37 @@
+.item {
+    position: relative;
+    background: #ccc;
+    width: 24%;
+    min-height: 180px;
+    float: left;
+    margin-right: 1%;
+    margin-bottom: 10px;
+    transition: .75s background;
+}
+
+.item .header,
+.item .footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.item .header {
+    border-bottom: 1px solid #bababa;
+}
+
+.item .body {
+    padding: 10px;
+    text-align: center;
+}
+
+.item .footer {
+    border-top: 1px solid #bababa;
+    position: absolute;
+    bottom: 0;
+}
+
+.item:hover {
+    background: #eee;
+    cursor: pointer;
+}
