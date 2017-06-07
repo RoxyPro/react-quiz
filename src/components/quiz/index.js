@@ -33,8 +33,8 @@ class Quiz extends React.Component {
                 <div className="item">
                     <div className="header">{quiz.title}</div>
                     <div className="footer">
-                        <div className="pull-left">{quiz.category}</div>
-                        <div className="pull-right">{quiz.numOfQuestions}</div>
+                        {/*<div className="pull-left">{quiz.category}</div>*/}
+                        <div>{this.state.activeQuestion + 1} / {quiz.numOfQuestions}</div>
                     </div>
 
                     <div className="questions">

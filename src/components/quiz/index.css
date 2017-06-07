@@ -1,12 +1,9 @@
 .item {
     position: relative;
-    background: #07c;
-    color: #fff;
 }
 
 .item .header,
 .item .footer {
-    text-align: center;
     padding: 10px 0;
 }
 
@@ -26,12 +23,11 @@
 
 .prev-question button,
 .next-question button {
-    background: transparent;
-    border: 1px solid #fff;
+    border: none;
     padding: 10px;
-    color: #fff;
     cursor: pointer;
     transition: 0.5s background;
+    border-radius: 5px;
 }
 
 .prev-question:hover button,
